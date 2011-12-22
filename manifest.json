@@ -1,0 +1,22 @@
+{
+    "name": "Bungie Enhancement Suite",
+    "version": "0.1",
+    "description": "Enhances bungie.net with numerous features.",
+    "icons": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "permissions": [
+        "http://*bungie.net/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*.bungie.net/*"
+            ],
+            "js": [
+                "helper.js", "script.js"
+            ]
+        }
+    ]
+}
